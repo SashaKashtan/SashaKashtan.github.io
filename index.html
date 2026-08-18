@@ -21,6 +21,7 @@
   <body>
     <div class="site-shell">
       <header class="site-header" data-header>
+        <!-- LOGO -->
         <a
           class="brand"
           href="#top"
@@ -32,52 +33,108 @@
           </span>
         </a>
 
+        <!-- DESKTOP NAV -->
         <nav class="desktop-nav" aria-label="Основна навігація">
-          <a href="#about">Про мене</a>
-          <a href="#services">Послуги</a>
-          <a href="#approach">Підходи</a>
-          <a href="#for-whom">Для кого</a>
-          <a href="#blog">Блог</a>
-          <a href="#collab">Співпраця</a>
+          <a href="#about"> Про мене </a>
+
+          <a href="#expertise"> Досвід </a>
+
+          <a href="#services"> Послуги </a>
+
+          <a href="#for-whom"> З чим працюю </a>
+
+          <a href="#impact"> Діяльність </a>
+
+          <a href="#contacts"> Контакти </a>
         </nav>
 
+        <!-- ACTIONS -->
         <div class="header-actions">
+          <!-- SOCIALS DESKTOP -->
           <div class="socials socials--desktop" aria-label="Соціальні мережі">
+            <!-- INSTAGRAM -->
             <a
               href="https://www.instagram.com/sashakashtan/"
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="Instagram"
               class="social-link"
             >
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <rect x="3" y="3" width="18" height="18" rx="5" />
+
                 <circle cx="12" cy="12" r="4.2" />
+
                 <circle cx="17.4" cy="6.7" r="1" class="fill-dot" />
               </svg>
             </a>
 
+            <!-- TELEGRAM -->
             <a
               href="https://t.me/Sasha_Kashtan"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Telegram"
               class="social-link"
             >
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path
                   class="telegram-fill"
-                  d="M21 4 3.7 10.7c-.9.4-.9 1 .1 1.3l4.4 1.4 1.7 5.1c.2.7.1.9.8.9.5 0 .8-.2 1-.4l2.4-2.3 5 3.7c.9.5 1.5.2 1.8-.9L23.8 5c.3-1.3-.5-1.8-1.5-1.4L21 4Z"
+                  d="
+              M21 4
+              3.7 10.7
+              c-.9.4-.9 1 .1 1.3
+              l4.4 1.4
+              1.7 5.1
+              c.2.7.1.9.8.9
+              .5 0 .8-.2 1-.4
+              l2.4-2.3
+              5 3.7
+              c.9.5 1.5.2 1.8-.9
+              L23.8 5
+              c.3-1.3-.5-1.8-1.5-1.4
+              L21 4Z
+            "
                 />
 
                 <path
-                  d="m8.2 13.4 10.4-6.5c.5-.3.9-.1.6.2l-8.6 7.8-.3 3.4"
+                  d="
+              m8.2 13.4
+              10.4-6.5
+              c.5-.3.9-.1.6.2
+              l-8.6 7.8
+              -.3 3.4
+            "
                   class="inner-stroke"
                 />
               </svg>
             </a>
 
-            <a href="#" aria-label="YouTube" class="social-link">
+            <!-- YOUTUBE -->
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              class="social-link"
+            >
               <svg viewBox="0 0 24 24" aria-hidden="true">
                 <path
-                  d="M21.1 7.2a2.8 2.8 0 0 0-2-2C17.3 4.7 12 4.7 12 4.7s-5.3 0-7.1.5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2.4 12a29 29 0 0 0 .5 4.8 2.8 2.8 0 0 0 2 2c1.8.5 7.1.5 7.1.5s5.3 0 7.1-.5a2.8 2.8 0 0 0 2-2 29 29 0 0 0 .5-4.8 29 29 0 0 0-.5-4.8Z"
+                  d="
+              M21.1 7.2
+              a2.8 2.8 0 0 0-2-2
+              C17.3 4.7 12 4.7 12 4.7
+              s-5.3 0-7.1.5
+              a2.8 2.8 0 0 0-2 2
+              A29 29 0 0 0 2.4 12
+              a29 29 0 0 0 .5 4.8
+              2.8 2.8 0 0 0 2 2
+              c1.8.5 7.1.5 7.1.5
+              s5.3 0 7.1-.5
+              a2.8 2.8 0 0 0 2-2
+              29 29 0 0 0 .5-4.8
+              29 29 0 0 0-.5-4.8Z
+            "
                 />
 
                 <path d="m10 9 5 3-5 3V9Z" class="fill-shape" />
@@ -85,11 +142,21 @@
             </a>
           </div>
 
-          <a class="btn btn--primary" href="https://t.me/Sasha_Kashtan">
+          <!-- MAIN CTA -->
+          <a
+            class="btn btn--primary header-cta"
+            href="https://t.me/Sasha_Kashtan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span>Записатися</span>
-            <span class="btn-arrow" aria-hidden="true"><i></i></span>
+
+            <span class="btn-arrow" aria-hidden="true">
+              <i></i>
+            </span>
           </a>
 
+          <!-- BURGER -->
           <button
             class="menu-toggle"
             type="button"
@@ -98,10 +165,16 @@
             aria-label="Відкрити меню"
             data-menu-toggle
           >
-            <span></span><span></span><span></span>
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
         </div>
       </header>
+
+      <!-- =======================================================
+     MOBILE MENU
+======================================================= -->
 
       <div
         class="mobile-menu"
@@ -110,59 +183,158 @@
         aria-hidden="true"
       >
         <div class="mobile-menu__backdrop" data-menu-close></div>
+
         <div class="mobile-menu__panel">
+          <!-- TOP -->
           <div class="mobile-menu__top">
-            <span class="mobile-menu__eyebrow">Навігація</span>
+            <span class="mobile-menu__eyebrow"> Навігація </span>
+
             <button
               class="menu-close"
               type="button"
               aria-label="Закрити меню"
               data-menu-close
             >
-              <span></span><span></span>
+              <span></span>
+              <span></span>
             </button>
           </div>
 
+          <!-- MOBILE NAV -->
           <nav class="mobile-menu__nav" aria-label="Мобільна навігація">
-            <a href="#about"><span>01</span>Про мене</a>
-            <a href="#services"><span>02</span>Послуги</a>
-            <a href="#approach"><span>03</span>Підходи</a>
-            <a href="#for-whom"><span>04</span>Для кого</a>
-            <a href="#collab"><span>06</span>Співпраця</a>
+            <a href="#about">
+              <span>01</span>
+              Про мене
+            </a>
+
+            <a href="#expertise">
+              <span>02</span>
+              Досвід
+            </a>
+
+            <a href="#services">
+              <span>03</span>
+              Послуги
+            </a>
+
+            <a href="#for-whom">
+              <span>04</span>
+              З чим працюю
+            </a>
+
+            <a href="#impact">
+              <span>05</span>
+              Діяльність
+            </a>
+
+            <a href="#contacts">
+              <span>06</span>
+              Контакти
+            </a>
           </nav>
 
+          <!-- FOOTER -->
           <div class="mobile-menu__footer">
-            <div class="socials">
-              <a href="#" aria-label="Instagram" class="social-link"
-                ><svg viewBox="0 0 24 24" aria-hidden="true">
+            <div class="socials" aria-label="Соціальні мережі">
+              <!-- INSTAGRAM -->
+              <a
+                href="https://www.instagram.com/sashakashtan/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                class="social-link"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
                   <rect x="3" y="3" width="18" height="18" rx="5" />
+
                   <circle cx="12" cy="12" r="4.2" />
+
                   <circle cx="17.4" cy="6.7" r="1" class="fill-dot" />
                 </svg>
               </a>
-              <a href="#" aria-label="Telegram" class="social-link"
-                ><svg viewBox="0 0 24 24" aria-hidden="true">
+
+              <!-- TELEGRAM -->
+              <a
+                href="https://t.me/Sasha_Kashtan"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Telegram"
+                class="social-link"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
                   <path
-                    d="M21 4 3.7 10.7c-.9.4-.9 1 .1 1.3l4.4 1.4 1.7 5.1c.2.7.1.9.8.9.5 0 .8-.2 1-.4l2.4-2.3 5 3.7c.9.5 1.5.2 1.8-.9L23.8 5c.3-1.3-.5-1.8-1.5-1.4L21 4Z"
+                    class="telegram-fill"
+                    d="
+                M21 4
+                3.7 10.7
+                c-.9.4-.9 1 .1 1.3
+                l4.4 1.4
+                1.7 5.1
+                c.2.7.1.9.8.9
+                .5 0 .8-.2 1-.4
+                l2.4-2.3
+                5 3.7
+                c.9.5 1.5.2 1.8-.9
+                L23.8 5
+                c.3-1.3-.5-1.8-1.5-1.4
+                L21 4Z
+              "
                   />
+
                   <path
-                    d="m8.2 13.4 10.4-6.5c.5-.3.9-.1.6.2l-8.6 7.8-.3 3.4"
+                    d="
+                m8.2 13.4
+                10.4-6.5
+                c.5-.3.9-.1.6.2
+                l-8.6 7.8
+                -.3 3.4
+              "
                     class="inner-stroke"
                   />
                 </svg>
               </a>
-              <a href="#" aria-label="YouTube" class="social-link"
-                ><svg viewBox="0 0 24 24" aria-hidden="true">
+
+              <!-- YOUTUBE -->
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                class="social-link"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
                   <path
-                    d="M21.1 7.2a2.8 2.8 0 0 0-2-2C17.3 4.7 12 4.7 12 4.7s-5.3 0-7.1.5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2.4 12a29 29 0 0 0 .5 4.8 2.8 2.8 0 0 0 2 2c1.8.5 7.1.5 7.1.5s5.3 0 7.1-.5a2.8 2.8 0 0 0 2-2 29 29 0 0 0 .5-4.8 29 29 0 0 0-.5-4.8Z"
+                    d="
+                M21.1 7.2
+                a2.8 2.8 0 0 0-2-2
+                C17.3 4.7 12 4.7 12 4.7
+                s-5.3 0-7.1.5
+                a2.8 2.8 0 0 0-2 2
+                A29 29 0 0 0 2.4 12
+                a29 29 0 0 0 .5 4.8
+                2.8 2.8 0 0 0 2 2
+                c1.8.5 7.1.5 7.1.5
+                s5.3 0 7.1-.5
+                a2.8 2.8 0 0 0 2-2
+                29 29 0 0 0 .5-4.8
+                29 29 0 0 0-.5-4.8Z
+              "
                   />
+
                   <path d="m10 9 5 3-5 3V9Z" class="fill-shape" />
                 </svg>
               </a>
             </div>
-            <a href="https://t.me/Sasha_Kashtan" class="mobile-menu__cta"
-              >Записатися на консультацію <span>↗</span></a
+
+            <a
+              href="https://t.me/Sasha_Kashtan"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mobile-menu__cta"
             >
+              Записатися на консультацію
+              <span>↗</span>
+            </a>
           </div>
         </div>
       </div>
