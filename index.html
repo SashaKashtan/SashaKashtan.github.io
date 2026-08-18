@@ -1,0 +1,1222 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#F2EADB" />
+    <meta
+      name="description"
+      content="Олександра Каштан — психологиня, сексологиня, арт-терапевтка, авторка. Онлайн-консультації українською, англійською та французькою."
+    />
+    <title>Олександра Каштан — психологиня та сексологиня</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header" data-header>
+        <a
+          class="brand"
+          href="#top"
+          aria-label="Олександра Каштан — на головну"
+        >
+          <span class="brand-copy">
+            <strong>Олександра Каштан</strong>
+            <small>психологиня · сексологиня</small>
+          </span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Основна навігація">
+          <a href="#about">Про мене</a>
+          <a href="#services">Послуги</a>
+          <a href="#approach">Підходи</a>
+          <a href="#for-whom">Для кого</a>
+          <a href="#blog">Блог</a>
+          <a href="#collab">Співпраця</a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="socials socials--desktop" aria-label="Соціальні мережі">
+            <a
+              href="https://www.instagram.com/sashakashtan/"
+              target="_blank"
+              aria-label="Instagram"
+              class="social-link"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4.2" />
+                <circle cx="17.4" cy="6.7" r="1" class="fill-dot" />
+              </svg>
+            </a>
+
+            <a
+              href="https://t.me/Sasha_Kashtan"
+              aria-label="Telegram"
+              class="social-link"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  class="telegram-fill"
+                  d="M21 4 3.7 10.7c-.9.4-.9 1 .1 1.3l4.4 1.4 1.7 5.1c.2.7.1.9.8.9.5 0 .8-.2 1-.4l2.4-2.3 5 3.7c.9.5 1.5.2 1.8-.9L23.8 5c.3-1.3-.5-1.8-1.5-1.4L21 4Z"
+                />
+
+                <path
+                  d="m8.2 13.4 10.4-6.5c.5-.3.9-.1.6.2l-8.6 7.8-.3 3.4"
+                  class="inner-stroke"
+                />
+              </svg>
+            </a>
+
+            <a href="#" aria-label="YouTube" class="social-link">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M21.1 7.2a2.8 2.8 0 0 0-2-2C17.3 4.7 12 4.7 12 4.7s-5.3 0-7.1.5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2.4 12a29 29 0 0 0 .5 4.8 2.8 2.8 0 0 0 2 2c1.8.5 7.1.5 7.1.5s5.3 0 7.1-.5a2.8 2.8 0 0 0 2-2 29 29 0 0 0 .5-4.8 29 29 0 0 0-.5-4.8Z"
+                />
+
+                <path d="m10 9 5 3-5 3V9Z" class="fill-shape" />
+              </svg>
+            </a>
+          </div>
+
+          <a class="btn btn--primary" href="https://t.me/Sasha_Kashtan">
+            <span>Записатися</span>
+            <span class="btn-arrow" aria-hidden="true"><i></i></span>
+          </a>
+
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Відкрити меню"
+            data-menu-toggle
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </header>
+
+      <div
+        class="mobile-menu"
+        id="mobile-menu"
+        data-mobile-menu
+        aria-hidden="true"
+      >
+        <div class="mobile-menu__backdrop" data-menu-close></div>
+        <div class="mobile-menu__panel">
+          <div class="mobile-menu__top">
+            <span class="mobile-menu__eyebrow">Навігація</span>
+            <button
+              class="menu-close"
+              type="button"
+              aria-label="Закрити меню"
+              data-menu-close
+            >
+              <span></span><span></span>
+            </button>
+          </div>
+
+          <nav class="mobile-menu__nav" aria-label="Мобільна навігація">
+            <a href="#about"><span>01</span>Про мене</a>
+            <a href="#services"><span>02</span>Послуги</a>
+            <a href="#approach"><span>03</span>Підходи</a>
+            <a href="#for-whom"><span>04</span>Для кого</a>
+            <a href="#collab"><span>06</span>Співпраця</a>
+          </nav>
+
+          <div class="mobile-menu__footer">
+            <div class="socials">
+              <a href="#" aria-label="Instagram" class="social-link"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4.2" />
+                  <circle cx="17.4" cy="6.7" r="1" class="fill-dot" />
+                </svg>
+              </a>
+              <a href="#" aria-label="Telegram" class="social-link"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M21 4 3.7 10.7c-.9.4-.9 1 .1 1.3l4.4 1.4 1.7 5.1c.2.7.1.9.8.9.5 0 .8-.2 1-.4l2.4-2.3 5 3.7c.9.5 1.5.2 1.8-.9L23.8 5c.3-1.3-.5-1.8-1.5-1.4L21 4Z"
+                  />
+                  <path
+                    d="m8.2 13.4 10.4-6.5c.5-.3.9-.1.6.2l-8.6 7.8-.3 3.4"
+                    class="inner-stroke"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="YouTube" class="social-link"
+                ><svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M21.1 7.2a2.8 2.8 0 0 0-2-2C17.3 4.7 12 4.7 12 4.7s-5.3 0-7.1.5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2.4 12a29 29 0 0 0 .5 4.8 2.8 2.8 0 0 0 2 2c1.8.5 7.1.5 7.1.5s5.3 0 7.1-.5a2.8 2.8 0 0 0 2-2 29 29 0 0 0 .5-4.8 29 29 0 0 0-.5-4.8Z"
+                  />
+                  <path d="m10 9 5 3-5 3V9Z" class="fill-shape" />
+                </svg>
+              </a>
+            </div>
+            <a href="https://t.me/Sasha_Kashtan" class="mobile-menu__cta"
+              >Записатися на консультацію <span>↗</span></a
+            >
+          </div>
+        </div>
+      </div>
+
+      <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-media" aria-hidden="true">
+            <img src="img/hero.jpg" alt="" />
+            <div class="hero-media__veil"></div>
+          </div>
+
+          <div class="hero-copy">
+            <div class="hero-kicker reveal" data-reveal>
+              <span>Психологиня</span><i></i><span>Сексологиня</span><i></i
+              ><span>Арт-терапевтка</span>
+            </div>
+
+            <h1
+              id="hero-title"
+              class="hero-title"
+              aria-label="Олександра Каштан"
+            >
+              <span class="hero-title__first reveal" data-reveal
+                >Олександра</span
+              >
+              <span class="hero-title__last reveal" data-reveal>Каштан</span>
+            </h1>
+
+            <p class="hero-lead reveal" data-reveal>
+              Простір, де можна бути собою. <em>Без страху. Без осуду.</em>
+            </p>
+
+            <div class="hero-actions reveal" data-reveal>
+              <a class="btn btn--primary" href="https://t.me/Sasha_Kashtan">
+                <span>Записатися на консультацію</span>
+                <span class="btn-arrow" aria-hidden="true"><i></i></span>
+              </a>
+              <a class="btn btn--ghost" href="#about">
+                <span>Дізнатися більше</span>
+                <span class="btn-arrow" aria-hidden="true"><i></i></span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-aside reveal" data-reveal>
+            <span class="hero-aside__index">01</span>
+            <p>
+              УВАГА ДО ВАШИХ ПОТРЕБ.<br />
+              ПОВАГА ДО ВАШОЇ ІСТОРІЇ.<br />
+              РОБОТА У ВАШОМУ ТЕМПІ.
+            </p>
+          </div>
+
+          <div class="hero-scroll" aria-hidden="true">
+            <span>scroll</span>
+            <i></i>
+          </div>
+        </section>
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee__track">
+            <div class="marquee__group">
+              <span>Психологія</span>
+              <i></i>
+              <span>Сексологія</span>
+              <i></i>
+              <span>Арт-терапія</span>
+              <i></i>
+              <span>Онлайн по всьому світу</span>
+              <i></i>
+              <span>LGBTQ+ friendly</span>
+              <i></i>
+              <span>Без осуду</span>
+              <i></i>
+              <span>У вашому темпі</span>
+              <i></i>
+            </div>
+
+            <div class="marquee__group" aria-hidden="true">
+              <span>Психологія</span>
+              <i></i>
+              <span>Сексологія</span>
+              <i></i>
+              <span>Арт-терапія</span>
+              <i></i>
+              <span>Онлайн по всьому світу</span>
+              <i></i>
+              <span>LGBTQ+ friendly</span>
+              <i></i>
+              <span>Без осуду</span>
+              <i></i>
+              <span>У вашому темпі</span>
+              <i></i>
+            </div>
+          </div>
+        </div>
+
+        <section class="expertise section" id="expertise">
+          <div class="expertise__container">
+            <div class="section-header">
+              <div class="kicker reveal" data-reveal="">
+                <span>Досвід</span>
+                <i></i>
+                <span>Практика</span>
+                <i></i>
+                <span>Підхід</span>
+              </div>
+
+              <h2 class="title reveal" data-reveal="">
+                <span data-title-line>Повернення</span>
+                <em data-title-line>до себе.</em>
+              </h2>
+
+              <div class="description reveal" data-reveal>
+                <p>
+                  Допомагаю знаходити внутрішню опору, краще розуміти себе, свої
+                  бажання та будувати стосунки без страху, сорому й постійної
+                  боротьби із собою.
+                </p>
+              </div>
+            </div>
+
+            <!-- FACTS -->
+            <div class="expertise__facts" data-facts>
+              <!-- 7000 -->
+              <article class="expertise-fact">
+                <div class="expertise-fact__visual">
+                  <span class="expertise-number">7000<sup>+</sup></span>
+                </div>
+
+                <p class="expertise-fact__text">Консультацій</p>
+              </article>
+
+              <!-- WORLD -->
+              <article class="expertise-fact">
+                <div class="expertise-fact__visual">
+                  <svg
+                    class="expertise-icon expertise-icon--globe"
+                    viewBox="0 0 120 120"
+                    aria-hidden="true"
+                  >
+                    <circle class="draw" cx="60" cy="60" r="42" />
+
+                    <path class="draw" d="M18 60H102" />
+
+                    <path class="draw" d="M60 18V102" />
+
+                    <path
+                      class="draw"
+                      d="
+                M60 18
+                C43 29 35 43 35 60
+                C35 77 43 91 60 102
+              "
+                    />
+
+                    <path
+                      class="draw"
+                      d="
+                M60 18
+                C77 29 85 43 85 60
+                C85 77 77 91 60 102
+              "
+                    />
+
+                    <path
+                      class="draw"
+                      d="
+                M27 35
+                C46 43 74 43 93 35
+              "
+                    />
+
+                    <path
+                      class="draw"
+                      d="
+                M27 85
+                C46 77 74 77 93 85
+              "
+                    />
+                  </svg>
+                </div>
+
+                <p class="expertise-fact__text">
+                  Клієнти
+                  <span>по всьому світу</span>
+                </p>
+              </article>
+
+              <!-- 4 -->
+              <article class="expertise-fact">
+                <div class="expertise-fact__visual">
+                  <span class="expertise-number expertise-number--four">4</span>
+                </div>
+
+                <p class="expertise-fact__text">
+                  Мови
+                  <span>консультування</span>
+                </p>
+              </article>
+
+              <!-- LOTUS -->
+              <article class="expertise-fact">
+                <div class="expertise-fact__visual">
+                  <svg
+                    class="expertise-icon expertise-icon--lotus"
+                    viewBox="0 0 140 120"
+                    aria-hidden="true"
+                  >
+                    <!-- center -->
+                    <path
+                      class="draw"
+                      d="
+                M70 101
+                C54 80 54 51 70 20
+                C86 51 86 80 70 101
+              "
+                    />
+
+                    <!-- left inner -->
+                    <path
+                      class="draw"
+                      d="
+                M67 101
+                C47 91 38 70 41 43
+                C61 53 70 73 67 101
+              "
+                    />
+
+                    <!-- right inner -->
+                    <path
+                      class="draw"
+                      d="
+                M73 101
+                C93 91 102 70 99 43
+                C79 53 70 73 73 101
+              "
+                    />
+
+                    <!-- left outer -->
+                    <path
+                      class="draw"
+                      d="
+                M66 101
+                C42 102 24 88 16 64
+                C41 63 59 77 66 101
+              "
+                    />
+
+                    <!-- right outer -->
+                    <path
+                      class="draw"
+                      d="
+                M74 101
+                C98 102 116 88 124 64
+                C99 63 81 77 74 101
+              "
+                    />
+
+                    <!-- bottom left -->
+                    <path
+                      class="draw"
+                      d="
+                M70 101
+                C48 111 29 106 17 96
+              "
+                    />
+
+                    <!-- bottom right -->
+                    <path
+                      class="draw"
+                      d="
+                M70 101
+                C92 111 111 106 123 96
+              "
+                    />
+                  </svg>
+                </div>
+
+                <p class="expertise-fact__text expertise-fact__text--services">
+                  Психологія <b>•</b>
+                  <span>Сексологія <b>•</b></span>
+                  <span>Арт-терапія</span>
+                </p>
+              </article>
+
+              <!-- BOOK -->
+              <article class="expertise-fact">
+                <div class="expertise-fact__visual">
+                  <svg
+                    class="expertise-icon expertise-icon--book"
+                    viewBox="0 0 140 120"
+                    aria-hidden="true"
+                  >
+                    <!-- outer pages -->
+                    <path
+                      class="draw"
+                      d="
+                M70 101
+                C55 91 39 87 20 90
+                V31
+                C38 27 55 31 70 42
+                Z
+              "
+                    />
+
+                    <path
+                      class="draw"
+                      d="
+                M70 101
+                C85 91 101 87 120 90
+                V31
+                C102 27 85 31 70 42
+                Z
+              "
+                    />
+
+                    <!-- page layers -->
+                    <path
+                      class="draw"
+                      d="
+                M20 37
+                L14 40
+                V96
+                C35 92 54 96 70 106
+              "
+                    />
+
+                    <path
+                      class="draw"
+                      d="
+                M120 37
+                L126 40
+                V96
+                C105 92 86 96 70 106
+              "
+                    />
+
+                    <!-- center -->
+                    <path class="draw" d="M70 42V101" />
+                  </svg>
+                </div>
+
+                <p class="expertise-fact__text">
+                  Авторка книги
+                  <span>про емоційне</span>
+                  <span>вигорання</span>
+                </p>
+              </article>
+            </div>
+          </div>
+
+          <!-- WAVES -->
+          <div class="expertise-waves" aria-hidden="true">
+            <svg viewBox="0 0 1800 180" preserveAspectRatio="none">
+              <path
+                d="M-100 100 C160 25 310 150 550 91 C800 30 970 145 1210 83 C1450 22 1600 116 1900 48"
+              />
+
+              <path
+                d="M-100 116 C170 48 330 164 570 108 C810 51 985 157 1230 101 C1460 48 1640 132 1900 69"
+              />
+
+              <path
+                d="M-100 132 C180 69 350 176 590 126 C830 75 1000 171 1250 119 C1480 72 1660 146 1900 91"
+              />
+
+              <path
+                d="M-100 148 C190 91 370 186 610 143 C850 99 1020 183 1270 137 C1500 96 1680 160 1900 114"
+              />
+            </svg>
+          </div>
+
+          <!-- BOTTOM -->
+          <div class="hero-actions hero-actions-center reveal" data-reveal="">
+            <a class="btn btn--primary" href="https://t.me/Sasha_Kashtan">
+              <span>Записатися на консультацію</span>
+              <span class="btn-arrow" aria-hidden="true"><i></i></span>
+            </a>
+            <a class="btn btn--ghost" href="#about">
+              <span>Дізнатися більше</span>
+              <span class="btn-arrow" aria-hidden="true"><i></i></span>
+            </a>
+          </div>
+        </section>
+        <section class="about" id="about" aria-labelledby="about-title">
+          <!-- IMAGE -->
+          <div class="about-media" aria-hidden="true">
+            <img src="img/about.jpg" alt="" class="about-media__image" />
+
+            <div class="about-media__veil"></div>
+          </div>
+
+          <!-- CONTENT -->
+          <div class="about-copy">
+            <!-- same visual language as hero -->
+            <div class="hero-kicker reveal" data-reveal>
+              <span>Психологиня</span>
+              <i></i>
+              <span>Сексологиня</span>
+              <i></i>
+              <span>Арт-терапевтка</span>
+            </div>
+
+            <h2 class="hero-title" aria-label="Олександра Каштан">
+              <span class="hero-title__first reveal" data-reveal
+                >Олександра</span
+              >
+              <span class="hero-title__last reveal" data-reveal>Каштан</span>
+            </h2>
+
+            <div class="about-text">
+              <p class="reveal" data-reveal>
+                Я психологиня та сексологиня, і для мене психотерапія — це
+                передусім простір, у якому можна бути собою. Без необхідності
+                відповідати чужим очікуванням, соромитися своїх почуттів чи
+                намагатися бути «правильною».
+              </p>
+
+              <div
+                class="about-divider reveal"
+                data-reveal
+                aria-hidden="true"
+              ></div>
+
+              <p class="reveal" data-reveal>
+                У приватній практиці я працюю з людьми з різних країн світу та
+                консультую онлайн українською, російською, англійською та
+                французькою мовами.
+              </p>
+
+              <div
+                class="about-divider reveal"
+                data-reveal
+                aria-hidden="true"
+              ></div>
+
+              <p class="reveal" data-reveal>
+                У своїй роботі використовую
+                <strong>інтегративний підхід</strong> — поєдную інструменти
+                різних напрямів психології та психотерапії залежно від
+                особистості, історії та запиту конкретної людини.
+              </p>
+            </div>
+
+            <p class="hero-lead reveal" data-reveal="">
+              Я не підлаштовую людину під метод.
+              <em>Я підбираю методи під людину.</em>
+            </p>
+            <div
+              class="socials reveal"
+              data-reveal=""
+              aria-label="Соціальні мережі"
+            >
+              <a
+                href="https://www.instagram.com/sashakashtan/"
+                target="_blank"
+                aria-label="Instagram"
+                class="social-link"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="3" width="18" height="18" rx="5" />
+                  <circle cx="12" cy="12" r="4.2" />
+                  <circle cx="17.4" cy="6.7" r="1" class="fill-dot" />
+                </svg>
+              </a>
+
+              <a
+                href="https://t.me/Sasha_Kashtan"
+                aria-label="Telegram"
+                class="social-link"
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    class="telegram-fill"
+                    d="M21 4 3.7 10.7c-.9.4-.9 1 .1 1.3l4.4 1.4 1.7 5.1c.2.7.1.9.8.9.5 0 .8-.2 1-.4l2.4-2.3 5 3.7c.9.5 1.5.2 1.8-.9L23.8 5c.3-1.3-.5-1.8-1.5-1.4L21 4Z"
+                  />
+
+                  <path
+                    d="m8.2 13.4 10.4-6.5c.5-.3.9-.1.6.2l-8.6 7.8-.3 3.4"
+                    class="inner-stroke"
+                  />
+                </svg>
+              </a>
+
+              <a href="#" aria-label="YouTube" class="social-link">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M21.1 7.2a2.8 2.8 0 0 0-2-2C17.3 4.7 12 4.7 12 4.7s-5.3 0-7.1.5a2.8 2.8 0 0 0-2 2A29 29 0 0 0 2.4 12a29 29 0 0 0 .5 4.8 2.8 2.8 0 0 0 2 2c1.8.5 7.1.5 7.1.5s5.3 0 7.1-.5a2.8 2.8 0 0 0 2-2 29 29 0 0 0 .5-4.8 29 29 0 0 0-.5-4.8Z"
+                  />
+
+                  <path d="m10 9 5 3-5 3V9Z" class="fill-shape" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- subtle decorative lines -->
+          <div class="about-lines" aria-hidden="true">
+            <svg viewBox="0 0 1600 250" preserveAspectRatio="none">
+              <path
+                d="
+          M-80 170
+          C170 94 340 202 575 151
+          C810 99 990 188 1230 139
+          C1460 93 1600 152 1700 117
+        "
+              />
+
+              <path
+                d="
+          M-80 193
+          C170 125 355 218 590 172
+          C830 125 1005 205 1245 162
+          C1465 121 1620 174 1700 145
+        "
+              />
+
+              <path
+                d="
+          M-80 214
+          C190 151 370 233 610 193
+          C850 152 1025 221 1270 182
+          C1490 148 1635 192 1710 167
+        "
+              />
+            </svg>
+          </div>
+        </section>
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee__track">
+            <div class="marquee__group">
+              <span>Психологія</span>
+              <i></i>
+              <span>Сексологія</span>
+              <i></i>
+              <span>Арт-терапія</span>
+              <i></i>
+              <span>Онлайн по всьому світу</span>
+              <i></i>
+              <span>LGBTQ+ friendly</span>
+              <i></i>
+              <span>Без осуду</span>
+              <i></i>
+              <span>У вашому темпі</span>
+              <i></i>
+            </div>
+
+            <div class="marquee__group" aria-hidden="true">
+              <span>Психологія</span>
+              <i></i>
+              <span>Сексологія</span>
+              <i></i>
+              <span>Арт-терапія</span>
+              <i></i>
+              <span>Онлайн по всьому світу</span>
+              <i></i>
+              <span>LGBTQ+ friendly</span>
+              <i></i>
+              <span>Без осуду</span>
+              <i></i>
+              <span>У вашому темпі</span>
+              <i></i>
+            </div>
+          </div>
+        </div>
+        <section class="impact-section" id="impact">
+          <div class="impact-media" aria-hidden="true">
+            <img src="img/impact.png" alt="" />
+            <div class="impact-media__overlay"></div>
+          </div>
+
+          <div class="impact-container">
+            <div class="impact-kicker hero-kicker reveal" data-reveal>
+              <span>Професійна діяльність</span>
+              <i></i>
+              <span>Підтримка</span>
+              <i></i>
+              <span>Без дискримінації</span>
+            </div>
+
+            <div class="impact-layout">
+              <div class="impact-intro">
+                <h2 class="impact-title">
+                  <span class="impact-title__line reveal" data-reveal>
+                    Психологічна
+                  </span>
+
+                  <em class="impact-title__line reveal" data-reveal>
+                    допомога
+                  </em>
+
+                  <span class="impact-title__line reveal" data-reveal>
+                    без осуду.
+                  </span>
+                </h2>
+              </div>
+
+              <div class="impact-content">
+                <p class="impact-text reveal" data-reveal>
+                  Окремою важливою частиною моєї професійної діяльності є робота
+                  в БО «Позитивні жінки» у проєкті за підтримки
+                  <strong>Elton John AIDS Foundation (EJAF)</strong>, де я надаю
+                  психологічну допомогу жінкам із вразливих груп, зокрема
+                  жінкам, які живуть із ВІЛ, трансгендерним жінкам,
+                  секс-працівницям, жінкам із досвідом залежності та
+                  постраждалим від домашнього насильства.
+                </p>
+
+                <div class="impact-rule reveal" data-reveal></div>
+
+                <p class="impact-text reveal" data-reveal>
+                  Я LGBTQ+ friendly психологиня. Для мене принципово важливо,
+                  щоб у терапії не було місця осуду, дискримінації чи
+                  нав’язування того, яким «має» бути життя людини.
+                </p>
+
+                <div class="impact-rule reveal" data-reveal></div>
+
+                <p class="impact-text reveal" data-reveal>
+                  Я є членкинею Спілки практикуючих психосоматологів та
+                  Міжнародної асоціації сексологів та психологів.
+                </p>
+
+                <div class="impact-book reveal" data-reveal>
+                  <span class="impact-book__label"> Авторка книги </span>
+
+                  <p>
+                    «Назустріч до щастя,
+                    <em>знявши підбори»</em>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="consultations section" id="services">
+          <div class="consultations__container">
+            <!-- HEADER -->
+            <div class="section-header consultations__header">
+              <div class="kicker reveal" data-reveal>
+                <span>Психологія</span>
+                <i></i>
+                <span>Сексологія</span>
+                <i></i>
+                <span>Онлайн</span>
+              </div>
+
+              <h2 class="title reveal" data-reveal>
+                <span data-title-line>Простір для</span>
+                <em data-title-line>важливих розмов.</em>
+              </h2>
+
+              <div class="description reveal" data-reveal>
+                <p>
+                  Індивідуальні та парні консультації у безпечному,
+                  конфіденційному просторі — з увагою до вашої історії, потреб і
+                  темпу.
+                </p>
+              </div>
+            </div>
+
+            <!-- CARDS -->
+            <div class="consultations__grid">
+              <!-- INDIVIDUAL -->
+              <article class="consultation-card reveal" data-reveal>
+                <div class="consultation-card__top">
+                  <span class="consultation-card__number">01</span>
+
+                  <span class="consultation-card__type"> Індивідуальна </span>
+                </div>
+
+                <div class="consultation-card__content">
+                  <h3 class="consultation-card__title">
+                    Психологічна
+                    <em>консультація</em>
+                  </h3>
+
+                  <div class="consultation-card__meta">
+                    <span>55–60 хвилин</span>
+                    <i></i>
+                    <span>онлайн</span>
+                  </div>
+
+                  <div class="consultation-card__prices">
+                    <div class="consultation-price">
+                      <span class="consultation-price__label">
+                        Для клієнтів, які проживають в Україні
+                      </span>
+
+                      <strong>2 000 <small>грн</small></strong>
+                    </div>
+
+                    <div class="consultation-price">
+                      <span class="consultation-price__label">
+                        Для клієнтів за межами України
+                      </span>
+
+                      <strong>60 <small>€</small></strong>
+                    </div>
+                  </div>
+
+                  <p class="consultation-card__text">
+                    Індивідуальна робота з вашим запитом у безпечному та
+                    конфіденційному просторі. Я працюю в інтегративному підході
+                    — підбираю методи та інструменти відповідно до конкретної
+                    людини, її історії, потреб і темпу.
+                  </p>
+                </div>
+
+                <div class="consultation-card__footer">
+                  <a
+                    class="btn btn--primary consultation-card__button"
+                    href="https://t.me/Sasha_Kashtan"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <span>Записатися</span>
+
+                    <span class="btn-arrow" aria-hidden="true">
+                      <i></i>
+                    </span>
+                  </a>
+                </div>
+              </article>
+
+              <!-- COUPLE -->
+              <article
+                class="consultation-card consultation-card--accent reveal"
+                data-reveal
+              >
+                <div class="consultation-card__top">
+                  <span class="consultation-card__number">02</span>
+
+                  <span class="consultation-card__type"> Для пари </span>
+                </div>
+
+                <div class="consultation-card__content">
+                  <h3 class="consultation-card__title">
+                    Парна психологічна /
+                    <em>сексологічна консультація</em>
+                  </h3>
+
+                  <div class="consultation-card__meta">
+                    <span>80 хвилин</span>
+                    <i></i>
+                    <span>онлайн</span>
+                  </div>
+
+                  <div class="consultation-card__prices">
+                    <div class="consultation-price consultation-price--single">
+                      <span class="consultation-price__label">
+                        Вартість консультації
+                      </span>
+
+                      <strong>90 <small>€</small></strong>
+                    </div>
+                  </div>
+
+                  <p class="consultation-card__text">
+                    Для пар, які переживають кризу, труднощі у комунікації,
+                    втрату емоційної або сексуальної близькості, конфлікти,
+                    зміни у сексуальному житті чи хочуть краще розуміти одне
+                    одного.
+                  </p>
+                </div>
+
+                <div class="consultation-card__footer">
+                  <a
+                    class="btn btn--primary consultation-card__button"
+                    href="https://t.me/Sasha_Kashtan"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <span>Записатися</span>
+
+                    <span class="btn-arrow" aria-hidden="true">
+                      <i></i>
+                    </span>
+                  </a>
+                </div>
+              </article>
+            </div>
+
+            <!-- BOTTOM NOTE -->
+            <div class="consultations__note reveal" data-reveal>
+              <span class="consultations__note-line"></span>
+
+              <p>
+                Усі консультації проходять
+                <em>онлайн.</em>
+                Працюю з клієнтами з різних країн світу.
+              </p>
+
+              <span class="consultations__note-line"></span>
+            </div>
+          </div>
+        </section>
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee__track">
+            <div class="marquee__group">
+              <span>Психологія</span>
+              <i></i>
+              <span>Сексологія</span>
+              <i></i>
+              <span>Арт-терапія</span>
+              <i></i>
+              <span>Онлайн по всьому світу</span>
+              <i></i>
+              <span>LGBTQ+ friendly</span>
+              <i></i>
+              <span>Без осуду</span>
+              <i></i>
+              <span>У вашому темпі</span>
+              <i></i>
+            </div>
+
+            <div class="marquee__group" aria-hidden="true">
+              <span>Психологія</span>
+              <i></i>
+              <span>Сексологія</span>
+              <i></i>
+              <span>Арт-терапія</span>
+              <i></i>
+              <span>Онлайн по всьому світу</span>
+              <i></i>
+              <span>LGBTQ+ friendly</span>
+              <i></i>
+              <span>Без осуду</span>
+              <i></i>
+              <span>У вашому темпі</span>
+              <i></i>
+            </div>
+          </div>
+        </div>
+
+        <section
+          class="work-with"
+          id="for-whom"
+          aria-labelledby="work-with-title"
+        >
+          <!-- PHOTO -->
+          <div class="work-with__media" aria-hidden="true">
+            <img src="img/work.jpg" alt="" />
+
+            <div class="work-with__veil"></div>
+          </div>
+
+          <!-- CONTENT -->
+          <div class="work-with__copy">
+            <div class="hero-kicker work-with__kicker reveal" data-reveal>
+              <span>Запити</span>
+              <i></i>
+              <span>Підтримка</span>
+              <i></i>
+              <span>Терапія</span>
+            </div>
+
+            <h2
+              class="work-with__title"
+              id="work-with-title"
+              aria-label="З чим я працюю"
+            >
+              <span class="work-with__title-first reveal" data-reveal>
+                З чим
+              </span>
+
+              <em class="work-with__title-last reveal" data-reveal>
+                я працюю
+              </em>
+            </h2>
+
+            <!-- TOPICS -->
+            <div class="work-with__topics" data-work-topics>
+              <div class="work-topic">
+                <span>Стосунки</span>
+              </div>
+
+              <div class="work-topic work-topic--accent">
+                <span>Самооцінка</span>
+              </div>
+
+              <div class="work-topic">
+                <span>Тривога</span>
+              </div>
+
+              <div class="work-topic work-topic--accent">
+                <span>Емоційне вигорання</span>
+              </div>
+
+              <div class="work-topic">
+                <span>Особисті кордони</span>
+              </div>
+
+              <div class="work-topic">
+                <span>Життєві кризи</span>
+              </div>
+
+              <div class="work-topic work-topic--accent">
+                <span>Сексуальність</span>
+              </div>
+
+              <div class="work-topic">
+                <span>Еміграція та адаптація</span>
+              </div>
+
+              <div class="work-topic work-topic--accent">
+                <span>Повторювані життєві сценарії</span>
+              </div>
+            </div>
+
+            <div class="work-with__bottom reveal" data-reveal>
+              <p>
+                Ваш запит не має бути сформульований
+                <em>«правильно».</em>
+                Почати можна з того, що турбує саме зараз.
+              </p>
+
+              <a
+                class="btn btn--primary"
+                href="https://t.me/Sasha_Kashtan"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>Записатися на консультацію</span>
+
+                <span class="btn-arrow" aria-hidden="true">
+                  <i></i>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- IMAGE CAPTION -->
+          <div class="work-with__aside reveal" data-reveal>
+            <span class="work-with__aside-number">03</span>
+
+            <p>
+              МОЖНА ПРИЙТИ БЕЗ ГОТОВИХ ВІДПОВІДЕЙ.<br />
+              ДОСТАТНЬО БАЖАННЯ РОЗІБРАТИСЯ.
+            </p>
+          </div>
+        </section>
+        <section
+          class="contacts-section"
+          id="contacts"
+          aria-labelledby="contacts-title"
+        >
+          <!-- SAME BACKGROUND AS IMPACT -->
+          <div class="impact-media contacts-media" aria-hidden="true">
+            <img src="img/contacts.jpg" alt="" />
+            <div class="impact-media__overlay contacts-media__overlay"></div>
+          </div>
+
+          <div class="contacts-container">
+            <!-- KICKER -->
+            <div class="hero-kicker contacts-kicker reveal" data-reveal>
+              <span>Контакти</span>
+              <i></i>
+              <span>Онлайн</span>
+              <i></i>
+              <span>По всьому світу</span>
+            </div>
+
+            <div class="contacts-layout">
+              <!-- LEFT -->
+              <div class="contacts-main">
+                <h2 class="contacts-title" id="contacts-title">
+                  <span class="contacts-title__first reveal" data-reveal>
+                    Готові
+                  </span>
+
+                  <em class="contacts-title__accent reveal" data-reveal>
+                    почати?
+                  </em>
+                </h2>
+
+                <p class="contacts-lead reveal" data-reveal>
+                  Якщо відчуваєте, що настав час поговорити,
+                  <em>напишіть мені.</em>
+                </p>
+
+                <div class="contacts-actions reveal" data-reveal>
+                  <a
+                    class="contacts-btn contacts-btn--main"
+                    href="https://t.me/Sasha_Kashtan"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span>
+                      <small>Telegram</small>
+                      Записатися на консультацію
+                    </span>
+
+                    <span class="contacts-arrow" aria-hidden="true">
+                      <i></i>
+                    </span>
+                  </a>
+
+                  <a
+                    class="contacts-btn contacts-btn--ghost"
+                    href="https://www.instagram.com/sashakashtan/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <span>
+                      <small>Instagram</small>
+                      @sashakashtan
+                    </span>
+
+                    <span class="contacts-arrow" aria-hidden="true">
+                      <i></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- RIGHT -->
+              <aside class="contacts-aside reveal" data-reveal>
+                <span class="contacts-aside__line"></span>
+
+                <div class="contacts-aside__content">
+                  <span class="contacts-aside__label"> Консультації </span>
+
+                  <p>
+                    Індивідуальні та парні психологічні й сексологічні
+                    консультації онлайн.
+                  </p>
+
+                  <div class="contacts-meta">
+                    <span>Україна</span>
+                    <i></i>
+                    <span>Європа</span>
+                    <i></i>
+                    <span>Весь світ</span>
+                  </div>
+                </div>
+              </aside>
+            </div>
+
+            <!-- BOTTOM -->
+            <div class="contacts-bottom reveal" data-reveal>
+              <span class="contacts-bottom__line"></span>
+
+              <p>
+                Простір, де можна бути собою.
+                <em>Без страху. Без осуду.</em>
+              </p>
+
+              <span class="contacts-bottom__line"></span>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
