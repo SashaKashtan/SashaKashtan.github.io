@@ -1082,13 +1082,6 @@ body.menu-open {
   justify-content: center;
 
   text-align: center;
-
-  /* reveal */
-  opacity: 0;
-
-  transform: translate3d(0, 38px, 0);
-
-  filter: blur(6px);
 }
 
 .expertise-fact.is-visible {
@@ -3537,14 +3530,6 @@ body.menu-open {
   border-bottom: 1px solid rgba(32, 50, 62, 0.13);
 
   overflow: hidden;
-
-  /* JS reveal state */
-
-  opacity: 0;
-
-  transform: translate3d(0, 22px, 0);
-
-  filter: blur(4px);
 }
 
 .work-topic.is-visible {
