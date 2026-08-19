@@ -3941,6 +3941,10 @@ body.menu-open {
   isolation: isolate;
 }
 
+.contacts-section .impact-media img {
+  object-position: top;
+}
+
 /* =========================================================
    BACKGROUND
 ========================================================= */
