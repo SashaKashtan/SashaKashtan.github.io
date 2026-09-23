@@ -1,0 +1,545 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#F2EADB" />
+    <meta name="robots" content="noindex, nofollow" />
+
+    <title>Ваша книга готова — Олександра Каштан</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      /* =========================================================
+   BOOK DOWNLOAD PAGE
+========================================================= */
+
+      .book-download-page {
+        margin: 0;
+
+        background: #f2eadb;
+        color: #20323e;
+
+        font-family: "Manrope", sans-serif;
+      }
+
+      .book-download-page *,
+      .book-download-page *::before,
+      .book-download-page *::after {
+        box-sizing: border-box;
+      }
+
+      /* =========================================================
+   PAGE
+========================================================= */
+
+      .book-download {
+        position: relative;
+
+        width: 100%;
+        min-height: 100svh;
+
+        overflow: hidden;
+
+        background:
+          radial-gradient(
+            circle at 78% 50%,
+            rgba(176, 200, 214, 0.22),
+            transparent 32rem
+          ),
+          #f2eadb;
+      }
+
+      /* =========================================================
+   HEADER
+========================================================= */
+
+      .book-download__header {
+        position: absolute;
+
+        z-index: 10;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100px;
+
+        padding: 0 clamp(22px, 4vw, 65px);
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        border-bottom: 1px solid rgba(32, 50, 62, 0.1);
+      }
+
+      /* BRAND */
+
+      .book-download__brand {
+        display: flex;
+        flex-direction: column;
+
+        gap: 2px;
+
+        color: #20323e;
+
+        text-decoration: none;
+      }
+
+      .book-download__brand strong {
+        font-size: 14px;
+        font-weight: 600;
+
+        letter-spacing: -0.02em;
+      }
+
+      .book-download__brand small {
+        color: rgba(32, 50, 62, 0.48);
+
+        font-size: 9px;
+
+        letter-spacing: 0.08em;
+
+        text-transform: uppercase;
+      }
+
+      /* CLOSE */
+
+      .book-download__close {
+        position: relative;
+
+        width: 42px;
+        height: 42px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border: 1px solid rgba(32, 50, 62, 0.18);
+        border-radius: 50%;
+
+        transition:
+          background 0.3s ease,
+          border-color 0.3s ease;
+      }
+
+      .book-download__close span {
+        position: absolute;
+
+        width: 15px;
+        height: 1px;
+
+        background: #20323e;
+      }
+
+      .book-download__close span:first-child {
+        transform: rotate(45deg);
+      }
+
+      .book-download__close span:last-child {
+        transform: rotate(-45deg);
+      }
+
+      .book-download__close:hover {
+        background: #20323e;
+        border-color: #20323e;
+      }
+
+      .book-download__close:hover span {
+        background: #fffdf8;
+      }
+
+      /* =========================================================
+   HERO
+========================================================= */
+
+      .book-download__hero {
+        padding: 150px clamp(24px, 7vw, 120px) 80px;
+
+        display: flex;
+        align-items: center;
+      }
+
+      /* =========================================================
+   CONTENT
+========================================================= */
+
+      .book-download__content {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* =========================================================
+   STATUS
+========================================================= */
+
+      .book-download__status {
+        display: flex;
+        align-items: center;
+
+        gap: 12px;
+
+        margin-bottom: 42px;
+
+        color: #6a93a8;
+
+        font-size: 10px;
+        font-weight: 600;
+
+        letter-spacing: 0.14em;
+
+        text-transform: uppercase;
+      }
+
+      .book-download__check {
+        width: 34px;
+        height: 34px;
+
+        display: grid;
+        place-items: center;
+
+        border: 1px solid rgba(106, 147, 168, 0.5);
+        border-radius: 50%;
+      }
+
+      .book-download__check svg {
+        width: 15px;
+        height: 15px;
+
+        fill: none;
+
+        stroke: currentColor;
+        stroke-width: 1.6;
+
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      /* =========================================================
+   TITLE
+========================================================= */
+
+      .book-download__title {
+        margin: 0;
+
+        color: #20323e;
+
+        font-family: "Playfair Display", serif;
+
+        font-size: clamp(80px, 10vw, 150px);
+        font-weight: 500;
+
+        line-height: 0.8;
+
+        letter-spacing: -0.06em;
+      }
+
+      .book-download__title em {
+        display: block;
+
+        margin-top: 0.12em;
+        margin-left: 0.3em;
+
+        color: #6a93a8;
+
+        font-weight: 500;
+        font-style: italic;
+      }
+
+      /* =========================================================
+   TEXT
+========================================================= */
+
+      .book-download__text {
+        margin: clamp(45px, 5vw, 65px) 0 0;
+
+        color: rgba(32, 50, 62, 0.62);
+
+        font-size: 16px;
+
+        line-height: 1.6;
+      }
+
+      /* =========================================================
+   BUTTON
+========================================================= */
+
+      .book-download__button {
+        position: relative;
+
+        overflow: hidden;
+
+        width: min(100%, 460px);
+        min-height: 72px;
+
+        margin: 28px 0 0;
+
+        padding: 0 26px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 30px;
+
+        background: #20323e;
+        color: #fffdf8;
+
+        font-size: 13px;
+        font-weight: 500;
+
+        letter-spacing: 0.01em;
+
+        text-decoration: none;
+
+        transition:
+          transform 0.4s ease,
+          box-shadow 0.4s ease;
+      }
+
+      /* BUTTON BACKGROUND HOVER */
+
+      .book-download__button::before {
+        content: "";
+
+        position: absolute;
+        inset: 0;
+
+        background: #6a93a8;
+
+        transform: translateX(-101%);
+
+        transition: transform 0.6s cubic-bezier(0.7, 0, 0.2, 1);
+      }
+
+      .book-download__button:hover::before {
+        transform: translateX(0);
+      }
+
+      .book-download__button:hover {
+        transform: translateY(-3px);
+
+        box-shadow: 0 18px 45px rgba(32, 50, 62, 0.13);
+      }
+
+      .book-download__button > span {
+        position: relative;
+        z-index: 2;
+      }
+
+      /* =========================================================
+   ARROW
+========================================================= */
+
+      .book-download__arrow {
+        width: 40px;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+
+      .book-download__arrow svg {
+        width: 31px;
+        height: 18px;
+
+        overflow: visible;
+
+        fill: none;
+
+        stroke: currentColor;
+        stroke-width: 1.4;
+
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .book-download__button:hover .book-download__arrow {
+        transform: translateX(6px);
+      }
+
+      /* =========================================================
+   BACK
+========================================================= */
+
+      .book-download__back {
+        display: block;
+
+        width: 100%;
+
+        margin: 20px 0 0;
+
+        color: rgba(32, 50, 62, 0.45);
+
+        font-size: 12px;
+        font-weight: 500;
+
+        letter-spacing: 0.12em;
+
+        text-decoration: none;
+        text-transform: uppercase;
+
+        transition: color 0.3s ease;
+        position: absolute;
+        bottom: 40px;
+        text-align: center;
+        left: 0;
+      }
+
+      .book-download__back:hover {
+        color: #20323e;
+      }
+
+      /* =========================================================
+   MOBILE
+========================================================= */
+
+      @media (max-width: 700px) {
+        .book-download__header {
+          height: 80px;
+
+          padding: 0 18px;
+        }
+
+        .book-download__close {
+          width: 38px;
+          height: 38px;
+        }
+
+        .book-download__hero {
+          padding: 65px 18px 60px;
+
+          align-items: flex-start;
+        }
+
+        .book-download__content {
+          width: 100%;
+
+          margin: 45px 0 0;
+        }
+
+        .book-download__status {
+          margin-bottom: 38px;
+
+          font-size: 12px;
+        }
+
+        .book-download__title {
+          font-size: clamp(64px, 20vw, 95px);
+        }
+
+        .book-download__title em {
+          margin-left: 0.12em;
+        }
+
+        .book-download__text {
+          margin: 45px 0 0;
+
+          font-size: 15px;
+        }
+
+        .book-download__button {
+          width: 100%;
+
+          margin: 25px 0 0;
+
+          min-height: 68px;
+
+          padding: 0 20px;
+        }
+
+        .book-download__back {
+          margin: 20px 0 0;
+        }
+      }
+
+      /* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+      @media (max-width: 390px) {
+        .book-download__title {
+          font-size: 61px;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="book-download-page">
+    <main class="book-download">
+      <!-- HEADER -->
+      <header class="book-download__header">
+        <a href="index.html" class="book-download__brand">
+          <strong>Олександра Каштан</strong>
+          <small>психологиня · сексологиня</small>
+        </a>
+
+        <a
+          href="index.html"
+          class="book-download__close"
+          aria-label="На головну"
+        >
+          <span></span>
+          <span></span>
+        </a>
+      </header>
+
+      <!-- CONTENT -->
+      <section class="book-download__hero">
+        <div class="book-download__content">
+          <div class="book-download__status">
+            <span class="book-download__check">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12.5 9.2 17 19 7" />
+              </svg>
+            </span>
+
+            <span>Оплату успішно отримано</span>
+          </div>
+
+          <h1 class="book-download__title">
+            Дякую
+            <em>за довіру</em>
+          </h1>
+
+          <p class="book-download__text">Ваша книга готова до завантаження.</p>
+
+          <a
+            href="Nazustrich_do_shchastia.pdf"
+            download="Nazustrich-do-shchastia-Oleksandra-Kashtan.pdf"
+            class="book-download__button"
+          >
+            <span>Завантажити книгу</span>
+
+            <span class="book-download__arrow" aria-hidden="true">
+              <svg viewBox="0 0 32 18">
+                <path d="M1 9H29" />
+                <path d="M22 2L29 9L22 16" />
+              </svg>
+            </span>
+          </a>
+
+          <a href="index.html" class="book-download__back">
+            Повернутися на сайт
+          </a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
